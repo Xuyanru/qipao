@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>新闻</title>
+   <link rel="stylesheet" href="css/index.css"/>
+ </head>
+ <body>
+	<div id="header"></div>
+	<div id="main">
+		<div id="news_main_pic"> 
+   			<img src="index/1.PNG" alt="">
+   		</div>
+		<ul id="news_list">
+			<li>
+				<div class="news-img">
+				<a href="">
+					<img src="index/20140510_42cd64b8-fe6b-4080-bf93-b6d78e9a9004.jpg" alt=""></a>
+				</div>
+				<div class="news-text">
+					<a href=""><h4>上海旗袍时尚文化活动在英国爱丁堡举行</h4></a>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国旗袍网讯 8月11日晚，在英国苏格兰首府爱丁堡的苏格兰民族博物馆, 模特身着上海旗袍走秀。 上海季海派旗袍的历史与创新活动11日晚在英国苏格兰首府爱丁堡的苏格兰民族博物馆举行，展现上海这座时尚都市的时尚历史、当今时尚创意和时尚文化。…</p>
+					<span>2016-08-14</span>
+				</div>
+			</li>
+			<li>
+				<div class="news-img">
+				<a href="">
+					<img src="index/20140510_42cd64b8-fe6b-4080-bf93-b6d78e9a9004.jpg" alt=""></a>
+				</div>
+				<div class="news-text">
+					<a href=""><h4>上海旗袍时尚文化活动在英国爱丁堡举行</h4></a>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国旗袍网讯 8月11日晚，在英国苏格兰首府爱丁堡的苏格兰民族博物馆, 模特身着上海旗袍走秀。 上海季海派旗袍的历史与创新活动11日晚在英国苏格兰首府爱丁堡的苏格兰民族博物馆举行，展现上海这座时尚都市的时尚历史、当今时尚创意和时尚文化。…</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="footer"></div>
+	 <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/index.js"></script>
+ </body>
+</html>
