@@ -92,24 +92,42 @@ h3{
 	width:100%;
 	position:absolute;
 	top:0;
-	left:50px;
+	left:0px;
 	height:167px;
+	font-size:1.5em;
+	background:#fff;
 }
 #menu_list ul{
 	overflow:hidden;
 	padding:20px;
 	margin-left:100px;
-	width:80%;
+	width:100%;
+}
+#menu_list .menu_content{
+	width:50%;
+	margin-left:10%;
+	background:url("../index/menu_bg(3).png") no-repeat;
+}
+#menu_list .menu_img{
+	width:30%;
+}
+#menu_list .menu_img img{
+	width:100%;
 }
 #menu_list ul li{
 	float:left;
 	margin-right:50px;
-	width:20%;
+	width:25%;
 }
 #menu_list ul li a{
 	padding:5px;
 	color:#333;
-	font-family:Vijaya;
+	font-size:1.3em;
+	font-family:"隶书";
+	transition: color 0.5s;
+}
+#menu_list ul li a:hover{
+	color: #316f4f;
 }
 /*大图轮播*/
 #main{
@@ -602,7 +620,7 @@ h3{
 /*图片*/
 .culture_pic{
     width:100%;
-    margin:50px auto 20px;
+    margin:50px auto 50px;
     overflow:hidden;
 }
 .culture_pic li{
@@ -648,23 +666,78 @@ h3{
 	color:#000;
 }
 /*文本*/
-.culture_content h3{
-	margin-bottom:0;
-    font-size:18px;
-    padding:7px 20px;
-    background: #c1c9d5;
-    border-radius:5px;
-    border:1px solid #adb3d5;
-	cursor:pointer;
+#zhou_outer{
+	width:80%;
+	overflow:hidden;
+	margin:0 auto;
+	box-sizing: border-box;
 }
-.culture_content h3 img{
+#zhou_outer ul,#zhou_outer  li,#zhou_outer  p,#zhou_outer .zhou_container{
+	box-sizing:border-box;
 	width:100%;
+	overflow:hidden;
+
 }
-.culture_content p{
-    background: #efeff1;
-    padding:20px;
-    display:none;
-	background:url(../index/juanzhou.png);
+#zhou_outer li{
+	display:none;
+	padding: 5% 0;
+
+}
+#zhou_outer .zhou_container{
+	position:relative;
+}
+#zhou_outer .zhouhead,#zhou_outer .zhoubody{
+	float:left;
+	box-sizing: border-box;
+}
+#zhou_outer .zhouhead{
+	width:2.945%;
+}
+#zhou_outer .zhoubody{
+	width:94.11%;
+	position:relative;
+}
+#zhou_outer .zhoubody .zhou_text{
+	box-sizing: border-box;
+	width:50%;
+	height:60%;
+	position:absolute;
+	top:25%;
+	left:25%;
+	-webkit-writing-mode:vertical-rl;
+	font-family: "楷体";
+	color:#111;
+}
+#zhou_outer .zhoubody .zhou_text h1{
+	margin-left:5%;
+	font-size:2.5em;
+}
+#zhou_outer .zhoubody .zhou_text p{
+	line-height:30px;
+	font-size:1.2em;
+}
+#zhou_outer img{
+	width:100%;
+	height:100%;
+	vertical-align: bottom;
+}
+#zhou_outer li.active{
+	display:block;
+}
+#zhou_outer .zhou_modal{
+	box-sizing: border-box;
+	width:97.055%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:2.945%;
+	background:#ddd;
+}
+#zhou_outer li:nth-child(1) .zhou_modal{
+	left:97.055%;
+}
+#zhou_outer .zhou_modal .zhou_modal_img{
+	width:3.09%;
 }
 /*新闻页面*/
 #news_main_pic{

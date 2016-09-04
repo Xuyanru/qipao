@@ -93,7 +93,7 @@ $(function(){
 					if(data.msg==="SUCC"){
 						user_id=data.user_id;
 						window.sessionStorage.setItem(data.user_id,data.name);
-						window.location.href='http://127.0.0.1/qipao1/index.html';
+						window.location.href='http://127.0.0.1/qipao/index.html';
 					}else{
 						$("#msg").html(data.reason);
 					}
@@ -143,16 +143,18 @@ $(".culture_pic li").hover(function(e){
 			$(this).parent().removeClass("moveIn");
 		});
 });
-$('.culture_content').on('click','h3',function(){
-	$(this).next().slideToggle(1000).siblings('p').slideUp(1000);
-});
+//卷轴打开
 $(".culture_pic").on("click","li a",function(){
-	var id=$(this).attr("href");
-	if($(id).css("display")!="block"){
-		$(".culture_content p").slideUp();
-		$(id).slideDown();
+	var i=parseInt($(this).attr("href").slice(-1));
+	console.log(i);
+	if(!($(`#zhou_outer li:nth-child(${i})`).hasClass("active"))){
+		$("#zhou_outer li.active .zhou_container").children(".zhou_modal").css("left","2.945%")
+		$("#zhou_outer li.active").removeClass("active");
+		$(`#zhou_outer li:nth-child(${i})`).addClass("active");
+		$(`#zhou_outer li:nth-child(${i}) .zhou_container`).children(".zhou_modal").animate({
+			left:"97.055%"
+		},2000);
 	}
-
 });
 //分类页面
 $("#fl_items li").hover(function(){

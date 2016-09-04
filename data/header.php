@@ -14,16 +14,21 @@
 				</div>
 			</div>
 			<div id="menu_list">
-				<ul>
-					<li><a href="index.html">首页</a></li>
-					<li><a href="culture.html">旗袍文化</a></li>
-					<li><a href="fenlei.html">旗袍分类</a></li>
-				</ul>
-				<ul>
-					<li><a href="news.html">新闻</a></li>
-					<li><a href="appreciate.html">图片鉴赏</a></li>
-					<li><a href="connect.html">联系我们</a></li>
-				</ul>	
+				<div class="menu_content lf">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="culture.html">旗袍文化</a></li>
+						<li><a href="fenlei.html">旗袍分类</a></li>
+					</ul>
+					<ul>
+						<li><a href="news.html">新闻</a></li>
+						<li><a href="appreciate.html">图片鉴赏</a></li>
+						<li><a href="connect.html">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="lf menu_img">
+					<img src="index/menu_bg.png">
+				</div>
 			</div>
 		</div>
 		<!-- 右边栏 -->
