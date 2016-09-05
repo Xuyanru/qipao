@@ -354,7 +354,7 @@ function miss(str){
 					"width":"100%",
 					"height":"100%",
 					"margin":"0px",
-					"opacity":"1",
+					"opacity":"1"
 				},500,function(){
 						$("#footer").css("position","").css("top",0+"px");
 					}
