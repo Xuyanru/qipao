@@ -34,8 +34,25 @@
 		<!-- 右边栏 -->
 		<adide id="side">
 			<div>您已经登录，请不要重复登录！<button id="confirm">确定</button></div>
-			<a href="regist.html" id="login">登录</a>
+			<a href="#" id="login">登录</a>
 			<a href="#">收藏</a>
 			<a href="#" id="top">TOP</a>
 		</adide>
+		<!-- 登录遮罩层 -->
+        			<div class="modal">
+        				<div class="modal-dialog">
+        					<h2>用户登录</h2>
+        					<div class="modal-content">
+        						<p id="msg">请保管好您的注册信息，以防丢失。</p>
+        						<form id="login-form" action="">
+        							<input type="text" name='user_name' id="user_name" value="" placeholder="请输入用户名">
+        							<input type="password" name='user_pwd' id="user_pwd" value=""
+        							placeholder="请输入密码">
+        							<input type="button" value="登录" id="login_btn">
+        							<a href="regist.html"><input type="button" value="注册" id="regist_btn"></a>
+        						</form>
+        					</div>
+        				</div>
+        			</div>
+
 		

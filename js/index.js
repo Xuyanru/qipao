@@ -77,9 +77,11 @@ $(function(){
 		$("#login").click(function(){
 			var storage=window.sessionStorage;
 			if(storage.length!=0){
-				$("#side>div").css("opacity","1");
+				$("#login").hide();
 				return false;
 
+			}else{
+				$(".modal").fadeIn();
 			}
 			});
 				
@@ -87,8 +89,6 @@ $(function(){
 			$("#login_btn").click(function(e){
 				e.preventDefault();
 				var requestMsg=$("#login-form").serialize();
-				console.log($("#user_name").val());
-				console.log($("#user_pwd").val());
 				$.post('data/login.php',requestMsg,function(data){
 					if(data.msg==="SUCC"){
 						user_id=data.user_id;
