@@ -17,11 +17,11 @@ INSERT INTO `users` VALUES(NULL, 'kaixinjiuhao', '123456',
 			'973367405@qq.com','1991-05-22','245853214');
 
 CREATE TABLE IF NOT EXISTS `news`(
-    `new_id` INT PRIMARY KEY AUTO_INCREMENT,
-    `new_img` varchar(100),
-    `new_title` varchar(50),
-    `new_content` varchar,
-    `new_time` date
+    `news_id` INT PRIMARY KEY AUTO_INCREMENT,
+    `news_img` varchar(100),
+    `news_title` varchar(50),
+    `news_content` varchar,
+    `news_time` date
 );
 INSERT INTO `news` VALUES(
      NULL,'index/news01.jpg','上海旗袍时尚文化活动在英国爱丁堡举行',
