@@ -2,7 +2,7 @@
 header('content-type:application/json;charset=utf-8');
 $uname=$_REQUEST['user_name'];
 $upwd=$_REQUEST['user_pwd'];
-$conn=mysqli_connect('127.0.0.1','root','','qipao',3306);
+$conn = mysqli_connect("127.0.0.1","-uroot","","qipao",3306);
 $sql="SET NAMES UTF8";
 $result=mysqli_query($conn,$sql);
 $sql="SELECT * FROM users WHERE user_name='$uname' AND user_pwd='$upwd'";

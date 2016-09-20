@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>旗袍之美</title>
+		<title>旗袍</title>
 		<link rel="stylesheet" href="css/index.css">
 	</head>
 	<body>
@@ -143,7 +143,6 @@
 		<div id="footer"></div>
 		</div>
 	<script src="js/jquery-1.11.3.js"></script>
-    <script src="js/jquery-ui.js"></script>
 	<script src="js/index.js"></script>
 	</body>
 </html>

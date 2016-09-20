@@ -1,7 +1,7 @@
 <?php
 header('content-type:text/plain;charset=utf-8');
 $user_name=$_REQUEST['user_name'];
-$conn=mysqli_connect('127.0.0.1','root','','qipao',3306);
+$conn = mysqli_connect("127.0.0.1","-uroot","","qipao",3306);
 $sql="SET NAMES UTF8";
 $result=mysqli_query($conn,$sql);
 $sql="SELECT * FROM users WHERE user_name='$user_name'";
